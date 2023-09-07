@@ -5,4 +5,34 @@
 
 # SensorBee: Lightweight stream processing engine for IoT
 
-See http://sensorbee.io/ for details.
+### Install SensorBee
+```
+$ go get gopkg.in/sensorbee/sensorbee.v0/...
+```
+`sensorbee` and `build_sensorbee` commands are installed under $GOPATH/bin.
+
+### Run SensorBee
+```
+$ sensorbee run
+```
+
+### Build Custom sensorbee Command
+Because SensorBee is written in Go, all plugins are statically linked. In order to add a plugin, a custom sensorbee command must be built.
+```
+$ ls
+build.yaml
+
+$ cat build.yaml
+plugins:
+  - github.com/sensorbee/twitter/plugin
+
+$ build_sensorbee
+sensorbee_main.go
+
+$ ls
+build.yaml
+sensorbee
+sensorbee_main.go
+```
+
+See http://docs.sensorbee.io/en/latest/ for details.
