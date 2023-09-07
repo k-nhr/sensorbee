@@ -16,8 +16,8 @@ $ go get gopkg.in/sensorbee/sensorbee.v0/...
 $ sensorbee run
 ```
 
-### Build Custom sensorbee Command
-Because SensorBee is written in Go, all plugins are statically linked. In order to add a plugin, a custom sensorbee command must be built.
+### Build Custom SensorBee Command
+Because SensorBee is written in Go, all plugins are statically linked. In order to add a plugin, a custom `sensorbee` command must be built.
 ```
 $ ls
 build.yaml
