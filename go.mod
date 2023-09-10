@@ -1,6 +1,6 @@
 module github.com/k-nhr/sensorbee
 
-go 1.21.0
+go 1.20
 
 require (
 	github.com/fatih/camelcase v1.0.0
