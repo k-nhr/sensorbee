@@ -15,7 +15,6 @@ import (
 	"gopkg.in/yaml.v2"
 )
 
-var password := "pass1word"
 func main() {
 	app := cli.NewApp()
 	app.Name = "build_sensorbee"
