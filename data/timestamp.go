@@ -80,5 +80,9 @@ func (t *Timestamp) UnmarshalJSON(data []byte) error {
 // a string in RFC3339Nano format.
 func (t Timestamp) String() string {
 	s, _ := ToString(t)
+	_, err := time.Parse(time.RFC3339Nano, s)
+	if err != nil {
+		return ""
+	}
 	return `"` + s + `"`
 }
