@@ -11,7 +11,7 @@ require (
 	github.com/peterh/liner v1.2.2
 	github.com/sirupsen/logrus v1.9.3
 	github.com/smartystreets/goconvey v1.8.1
-	github.com/ugorji/go/codec v1.2.11
+	github.com/ugorji/go/codec v1.2.12
 	github.com/xeipuuv/gojsonschema v1.2.0
 	golang.org/x/net v0.15.0
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1
