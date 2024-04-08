@@ -13,7 +13,7 @@ require (
 	github.com/smartystreets/goconvey v1.8.1
 	github.com/ugorji/go/codec v1.2.11
 	github.com/xeipuuv/gojsonschema v1.2.0
-	golang.org/x/net v0.15.0
+	golang.org/x/net v0.24.0
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1
 	gopkg.in/pfnet/jasco.v1 v1.0.1
 	gopkg.in/sensorbee/sensorbee.v0 v0.7.1
@@ -29,5 +29,5 @@ require (
 	github.com/smarty/assertions v1.15.0 // indirect
 	github.com/xeipuuv/gojsonpointer v0.0.0-20180127040702-4e3ac2762d5f // indirect
 	github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415 // indirect
-	golang.org/x/sys v0.12.0 // indirect
+	golang.org/x/sys v0.19.0 // indirect
 )
