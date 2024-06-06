@@ -25,5 +25,6 @@ jobs:
           OPENAI.API_VERSION: ${{ vars.AZURE_API_VERSION }}
           OPENAI.API_BASE: ${{ vars.AZURE_API_BASE }}
           OPENAI.DEPLOYMENT_ID: ${{ vars.AZURE_API_DEPLOYMENT_ID }}
-          PR_REVIEWER.EXTRA_INSTRUCTIONS: 'Please use Japanese in descriptions.'
-          PR_DESCRIPTION.EXTRA_INSTRUCTIONS: 'Please use Japanese in descriptions. Titles should have prefix of commitlint pattern such as `feat:`, `fix:`, `perf:`, `refactor:`, `test:`, `chore:`, `ci:`, `docs:` etc'
+          PR_DESCRIPTION.EXTRA_INSTRUCTIONS: "answer in Japanese"
+          PR_REVIEWER.EXTRA_INSTRUCTIONS: "answer in Japanese"
+          PR_CODE_SUGGESTIONS.EXTRA_INSTRUCTIONS: "answer in Japanese"
