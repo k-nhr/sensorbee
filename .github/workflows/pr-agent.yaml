@@ -28,6 +28,6 @@ jobs:
         with:
           debug: true
           review_comment_lgtm: false
-          openai_light_model: gpt-35-turbo-16k
-          openai_heavy_model: gpt-35-turbo-16k
+          openai_light_model: gpt-4o
+          openai_heavy_model: gpt-4o
           language: ja-JP
