@@ -25,4 +25,9 @@ jobs:
           OPENAI.API_VERSION: ${{ vars.AZURE_API_VERSION }}
           OPENAI.API_BASE: ${{ vars.AZURE_API_BASE }}
           OPENAI.DEPLOYMENT_ID: ${{ vars.AZURE_API_DEPLOYMENT_ID }}
-          CONFIG.MODEL: ${{ vars.AZURE_API_MODEL }}
+        with:
+          debug: true
+          review_comment_lgtm: false
+          openai_light_model: gpt-35-turbo-16k
+          openai_heavy_model: gpt-35-turbo-16k
+          language: ja-JP
