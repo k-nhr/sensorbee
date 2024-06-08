@@ -21,7 +21,8 @@ jobs:
         env:
           OPENAI_KEY: ${{ secrets.AZURE_OPENAI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OPENAI.API_TYPE: 'azure'
+          OPENAI.API_TYPE: "azure"
           OPENAI.API_VERSION: ${{ vars.AZURE_API_VERSION }}
           OPENAI.API_BASE: ${{ vars.AZURE_API_BASE }}
           OPENAI.DEPLOYMENT_ID: ${{ vars.AZURE_API_DEPLOYMENT_ID }}
+          CONFIG.MODEL: ${{ vars.AZURE_API_MODEL }}
