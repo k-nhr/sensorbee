@@ -19,15 +19,7 @@ jobs:
       - id: pr-agent
         uses: Codium-ai/pr-agent@main
         env:
-          OPENAI_KEY: ${{ secrets.AZURE_OPENAI_API_KEY }}
+          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          OPENAI.API_TYPE: "azure"
-          OPENAI.API_VERSION: ${{ vars.AZURE_API_VERSION }}
-          OPENAI.API_BASE: ${{ vars.AZURE_API_BASE }}
-          OPENAI.DEPLOYMENT_ID: ${{ vars.AZURE_API_DEPLOYMENT_ID }}
-        with:
-          debug: true
-          review_comment_lgtm: false
-          openai_light_model: gpt-4o
-          openai_heavy_model: gpt-4o
-          language: ja-JP
+          PR_REVIEWER.EXTRA_INSTRUCTIONS: 'Please use Japanese in descriptions.'
+          PR_DESCRIPTION.EXTRA_INSTRUCTIONS: 'Please use Japanese in descriptions. Titles should have prefix of commitlint pattern such as `feat:`, `fix:`, `perf:`, `refactor:`, `test:`, `chore:`, `ci:`, `docs:` etc'
